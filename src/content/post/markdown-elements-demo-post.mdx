@@ -1,0 +1,173 @@
+---
+publishDate: 2023-01-02T00:00:00Z
+title: Markdown elements demo post
+excerpt:  placeholder
+tags:
+  - markdown
+  - blog
+  - Astro
+---
+
+import Logo from '~/components/Logo.astro';
+import { YouTube, Tweet, Vimeo } from 'astro-embed';
+
+just a para
+
+## <a name="Headings"></a>Headings
+
+heading comes here
+
+## Heading two
+
+heading two comes here
+
+### Heading three
+
+haan
+
+#### Heading four
+
+eeeyyy
+
+##### Heading five
+
+hello mister
+
+###### Heading six
+
+ellow
+
+[[Top]](#top)
+
+## <a name="Paragraphs"></a>Paragraphs
+
+para goes here
+
+
+bla bla bla
+
+[[Top]](#top)
+
+## <a name="Blockquotes"></a>Blockquotes
+
+blockquotes goes down
+
+> kadal neerum uppu dha, kaneerum uppu dha
+
+like the same 
+
+> arumaingada 
+
+
+[[Top]](#top)
+
+## <a name="Lists"></a>Lists
+
+### Ordered List
+
+1. open
+2. close
+3. Mulberry
+
+### Unordered List
+
+- Olive
+- Orange
+  - Blood orange
+  - Clementine
+- Papaya
+
+[[Top]](#top)
+
+## <a name="Horizontal"></a>Horizontal rule
+
+keela oru kodu
+
+---
+
+bla bla
+
+[[Top]](#top)
+
+## <a name="Table"></a>Table
+
+table.
+
+| Table Heading 1 | Table Heading 2 | Center align | Right align | Table Heading 5 |
+| :-------------- | :-------------- | :----------: | ----------: | :-------------- |
+| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
+| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
+| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
+| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
+| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
+
+
+[[Top]](#top)
+
+## <a name="Code"></a>Code
+
+### Inline code
+
+ `code in text`  `<strong>in culpa qui officia</strong>` 
+
+
+
+```go
+package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+}
+
+func main() {
+    http.HandleFunc("/", handler)
+    http.ListenAndServe(":8080", nil)
+}
+```
+
+
+
+
+![Super wide](https://images.unsplash.com/photo-1710170601257-242514895755?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+![Not so big](https://placehold.co/600x400/000000/FFFFFF/png)
+
+
+## MDX
+
+```js
+---
+publishDate: 'Aug 02 2022'
+title: 'Markdown elements demo post'
+---
+import Logo from "~/components/Logo.astro";
+
+## MDX
+
+<Logo />
+```
+
+<div style="border:1px dashed;padding: 10px 5px">
+  <Logo />
+</div>
+
+## Astro Embed
+
+### Youtube
+
+<YouTube id="y9n6HkftavM" />
+
+### Tweet
+
+<Tweet id="https://twitter.com/Steve8708/status/1598713161339015173" />
+
+### Vimeo
+
+<Vimeo id="178430038" />
+
+[[Top]](#top)
